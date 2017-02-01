@@ -284,7 +284,7 @@ byte value=2;
 
 
 
-  if( (( (currentMillis - ulLastReceivedMark > WATCHDOGTIME) && (currentMillis - ulLastReceivedMark < (WATCHDOGTIME+300000) ) || bInitReset) && !bWatchDogStopped )
+  if( ( ( (currentMillis - ulLastReceivedMark > WATCHDOGTIME) && (currentMillis - ulLastReceivedMark < (WATCHDOGTIME+300000) )) || bInitReset) && !bWatchDogStopped )
   {
 
 
