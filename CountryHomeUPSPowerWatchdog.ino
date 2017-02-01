@@ -4,7 +4,7 @@ LED error codes:
 
 2 blinks - relay power error
 3 blinks - relay switch error
-
+4 blinks
 
 */
 
@@ -37,7 +37,6 @@ LED error codes:
 #define RELAY_STATUS_PIN 4
 #define RELAY_POWER_PIN 5
 #define STATUS_LED_PIN A0
-
 
 
 
