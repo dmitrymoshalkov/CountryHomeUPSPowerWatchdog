@@ -15,8 +15,8 @@ LED error codes:
 #define MY_RADIO_NRF24
 #define MY_RF24_CHANNEL	86
 #define MY_NODE_ID 91
-//#define MY_DEBUG // Enables debug messages in the serial log
-//#define MY_BAUD_RATE 115200
+#define MY_DEBUG // Enables debug messages in the serial log
+#define MY_BAUD_RATE 115200
 
 #include <MySensors.h>  
 #include <SPI.h>
@@ -25,7 +25,7 @@ LED error codes:
 #include <avr/wdt.h>
 #include <SimpleTimer.h>
 
- //#define NDEBUG                        // enable local debugging information
+ #define NDEBUG                        // enable local debugging information
 
 #define SKETCH_NAME "UPS Watchdog OTA"
 #define SKETCH_MAJOR_VER "1"
@@ -168,6 +168,11 @@ wait(RADIO_RESET_DELAY_TIME);
 
 present(STOP_WATCHDOG, S_BINARY); 
 wait(RADIO_RESET_DELAY_TIME);  
+
+
+
+  request(STOP_WATCHDOG, S_BINARY);
+  wait(RADIO_RESET_DELAY_TIME);
 
 
   	//Enable watchdog timer
