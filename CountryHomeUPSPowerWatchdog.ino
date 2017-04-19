@@ -12,6 +12,7 @@ LED error codes:
 //#define MY_OTA_FLASH_SS   8     // EEprom CS pin
 //#define MY_OTA_FLASH_JDECID 0x1F65
 
+
 #define MY_RADIO_NRF24
 #define MY_RF24_CHANNEL	86
 #define MY_NODE_ID 91
